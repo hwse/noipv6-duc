@@ -1,0 +1,11 @@
+[Unit]
+Description=NOIP (IPv6) Dynamic Update Client (DUC)
+After=network.target
+
+[Service]
+Type=simple
+User=noipv6-duc
+ExecStart=/usr/local/bin/noipv6-duc_1_0.py
+
+[Install]
+WantedBy=multi-user.target
